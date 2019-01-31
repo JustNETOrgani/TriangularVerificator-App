@@ -20,9 +20,7 @@ public class TriangularVerification {
 		Scanner in = new Scanner(System.in);
 		{
 			for (int i = 0; i < numbers.length; i++) {
-				// System.out.println("Enter a number");
-
-				// Try this for number validation
+				
 
 				boolean isValid = false;
 				while (isValid == false) {
@@ -34,7 +32,7 @@ public class TriangularVerification {
 						System.out.println("OK");
 					}
 					// If input is not a number execute this block,
-					else {
+					else  {
 						System.out.println("Error! What you entered is not a number.");
 					}
 					in.nextLine();
@@ -42,18 +40,13 @@ public class TriangularVerification {
 			}
 		} 
 
-		// Try ends here.
-		// numbers[i] = in.nextDouble();
-		// }
-
-		// }
-		// in.close();
+		
 	}
 
 	static void verify_numbers() {
 
 		while (numbers[0] <= 0 || numbers[1] < 0 || numbers[2] <= 0) {
-			System.out.println("Invalid dimension(s) of triangle entered. Cannot be Zero or negative number");
+			System.out.println("Invalid dimension(s) of triangle entered. Cannot be Zero or negative number. Start again.");
 			inputs();
 			verify_numbers();
 			System.exit(0);
@@ -108,7 +101,7 @@ public class TriangularVerification {
 		else
 
 		{
-			System.out.println("Sorry! Your inputs are NOT triangular numbers. You may try again.");
+			System.out.println("Sorry! Your inputs are NOT triangular numbers. You may try again. App closed.");
 			
 		}
 
